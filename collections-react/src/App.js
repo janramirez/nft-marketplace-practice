@@ -43,23 +43,23 @@ function App() {
 
   const data = [
     {
-      url: "../public/assets/images/1.png",
+      url: "./assets/images/1.png",
       param: "handleMint('https://gateway.pinata.cloud/ipfs/QmXZ3TgRgd5EZEk2DhwGvjf8f6sQJNCrnHzrEw1oHufgnL/1.png')",
     },
     {
-      url: "../public/assets/images/2.png",
+      url: "./assets/images/2.png",
       param: "handleMint('https://gateway.pinata.cloud/ipfs/QmXZ3TgRgd5EZEk2DhwGvjf8f6sQJNCrnHzrEw1oHufgnL/2.png')",
     },
     {
-      url: "../public/assets/images/3.png",
+      url: "./assets/images/3.png",
       param: "handleMint('https://gateway.pinata.cloud/ipfs/QmXZ3TgRgd5EZEk2DhwGvjf8f6sQJNCrnHzrEw1oHufgnL/3.png')",
     },
     {
-      url: "../public/assets/images/4.png",
+      url: "./assets/images/4.png",
       param: "handleMint('https://gateway.pinata.cloud/ipfs/QmXZ3TgRgd5EZEk2DhwGvjf8f6sQJNCrnHzrEw1oHufgnL/4.png')",
     },
     {
-      url: "../public/assets/images/5.png",
+      url: "./assets/images/5.png",
       param: "handleMint('https://gateway.pinata.cloud/ipfs/QmXZ3TgRgd5EZEk2DhwGvjf8f6sQJNCrnHzrEw1oHufgnL/5.png')",
     }
   ];
@@ -92,7 +92,7 @@ function App() {
       <>
       <div className="container">
         <br />
-        <h1>Epic Marketplace</h1>
+        <h1>Epic!</h1>
         <h2>NFT marketplace</h2>
         <p>Buy an NFT from our marketplace</p>
 
@@ -111,7 +111,7 @@ function App() {
     <>
     <div className="container">
       <br />
-      <h1>Epic Marketplace</h1>
+      <h1>Epic!</h1>
 
       <h2>NFT marketplace</h2>
       {data.map((item, index) => (
@@ -123,7 +123,7 @@ function App() {
           width={250}
           height={250}
           />
-          <button isLoading={isMintiing}
+          <button isLoading={isMinting}
           onClick={() => { 
             eval(item.param);
            }}>Mint - 0.001 eth</button>
